@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/mEstilo.css" />
+
+    <title>Registro de estudiante - TechAcademy</title>
+
+    <!-- Tipografía del sitio -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Encabezado principal -->
+    <header>
+      <div id="logo">
+        <h1>TechAcademy</h1>
+      </div>
+
+      <nav class="navPrincipal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="mentoria.html">Mentoría</a></li>
+          <li>
+            <a href="inscripcion.html" id="btn_destacado">Inscribirse</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Área de registro -->
+    <main class="contenedor_principal">
+      <section id="catalogo">
+        <h2 class="titulo_centrado">Regístrate en TechAcademy</h2>
+
+        <form
+          action="inscripcion.html"
+          method="GET"
+          class="formulario_inscripcion"
+        >
+          <!-- Nombre del alumno -->
+          <div class="campo_form">
+            <label for="nombre">Nombre del estudiante:</label>
+
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+
+          <!-- Correo electrónico -->
+          <div class="campo_form">
+            <label for="correo">Dirección de correo:</label>
+
+            <input type="email" id="correo" name="correo" required />
+          </div>
+
+          <!-- Selección del curso -->
+          <div class="campo_form">
+            <label for="curso">Selecciona el curso que deseas tomar:</label>
+
+            <select id="curso" name="curso" required>
+              <option value="">-- Elige una opción --</option>
+
+              <option value="ciberseguridad">
+                Fundamentos de la Ciberseguridad
+              </option>
+
+              <option value="ia">
+                Introducción a la Inteligencia Artificial Generativa
+              </option>
+
+              <option value="soporte">Principios del Soporte Técnico</option>
+
+              <option value="datos">Introducción al análisis de datos</option>
+
+              <option value="frontend">Desarrollo Web FrontEnd Avanzado</option>
+
+              <option value="backend">
+                Desarrollo Backend mediante APIs REST
+              </option>
+            </select>
+          </div>
+
+          <!-- Envío del formulario -->
+          <button type="submit" id="btn_accion" class="btn_enviar">
+            Registrar inscripción
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2026 TechAcademy</p>
+    </footer>
+  </body>
+</html>

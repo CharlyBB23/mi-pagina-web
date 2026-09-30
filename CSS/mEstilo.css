@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "OpenDescargada";
+  src: url("../fonts/OpenSans-Regular.ttf") format("woff2");
+}
+
+/* COLORES Y TIPOGRAFÍAS DEL PROYECTO */
+
+:root {
+  --color_principal: #004b87;
+  --color_secundario: #00a859;
+  --color_obscuro: #2b2b2b;
+  --color_claro: #fff;
+  --color_fondo: #f4f7f8;
+  --color_borde: #e0e0e0;
+  --fuente_titulos: "Montserrat";
+  --fuente_cuerpo: "OpenDescargada";
+}
+
+/* CONFIGURACIÓN BASE */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--fuente_titulos);
+}
+
+ul {
+  list-style: none;
+}
+
+/* DISTRIBUCIÓN GENERAL DE LA PÁGINA */
+
+body {
+  background-color: var(--color_fondo);
+  color: var(--color_obscuro);
+  font-family: var(--fuente_titulos);
+  line-height: 1.6;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ESTILOS PARA LOS TÍTULOS */
+
+h1,
+h2,
+h3 {
+  font-family: var(--fuente_titulos);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 15px;
+}
+
+/* CABECERA DEL SITIO */
+
+header {
+  background-color: var(--color_claro);
+  color: var(--color_principal);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px 50px;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* ELEMENTOS DE NAVEGACIÓN */
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  color: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--color_principal);
+}
+
+/* TÍTULO DEL LOGOTIPO */
+
+#logo h1 {
+  color: var(--color_principal);
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+/* FORMATO DE LOS BOTONES */
+
+#btn_destacado,
+#btn_accion {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+#btn_destacado {
+  background-color: var(--color_principal);
+  color: var(--color_claro);
+}
+
+#btn_accion {
+  background-color: var(--color_secundario);
+  color: var(--color_claro);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* CAMBIO DE COLOR AL INTERACTUAR */
+
+#btn_destacado:hover {
+  background-color: var(--color_claro);
+  color: var(--color_principal);
+}
+
+#btn_accion:hover {
+  background-color: var(--color_principal);
+  color: var(--color_claro);
+}
+
+/* ESPACIO PRINCIPAL */
+
+.contenedor_principal {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+
+  flex: 1;
+}
+
+/* TÍTULO DEL CATÁLOGO */
+
+#catalogo h2 {
+  color: var(--color_principal);
+  text-align: center;
+}
+
+/* FORMATO DEL ÁREA DE REGISTRO */
+
+.formulario_inscripcion {
+  background-color: var(--color_claro);
+  border: 1px solid var(--color_borde);
+  border-radius: 8px;
+
+  max-width: 500px;
+  padding: 30px;
+  margin: 30px auto;
+}
+
+/* CAMPOS DEL FORMULARIO */
+
+.formulario_inscripcion input,
+.formulario_inscripcion select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+
+  border: 1px solid var(--color_borde);
+  border-radius: 4px;
+
+  font-family: var(--fuente_titulos);
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+  background-color: var(--color_obscuro);
+  color: var(--color_claro);
+
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 20px;
+}
